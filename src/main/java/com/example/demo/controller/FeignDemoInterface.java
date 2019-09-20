@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-@FeignClient(value = "service-hi")
+@FeignClient(value = "service")
 public interface FeignDemoInterface {
 	@RequestMapping(value = "/hello",method = RequestMethod.GET)
     String testSayHi(@RequestParam(value = "name") String name);
